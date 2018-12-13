@@ -7,7 +7,8 @@ pipeline {
  stages {
      stage('Checkout') {
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '9e612bee-967f-4172-a07a-a36df0a85b62', url: 'https://github.com/GANKNIR/JSPWebApp.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '9e612bee-967f-4172-a07a-a36df0a85b62', url: 'https://github.com/GANKNIR/JavaWebApp.git
+']]])
       }
     }
     stage('build') {
@@ -17,8 +18,8 @@ pipeline {
     }
    stage('deploy') {
       steps {
-     sh 'mv ${WORKSPACE}/target/hello-world-war-1.0.0.war ${WORKSPACE}/target/hello.war' 
-      sh 'cp ${WORKSPACE}/target/hello.war /opt/tomcat/webapps/'
+     sh 'mv ${WORKSPACE}/target/greenhouse*.war ${WORKSPACE}/target/greenhouse.war' 
+      sh 'cp ${WORKSPACE}/target/greenhouse.war /opt/tomcat/webapps/'
         }
   }
  }
