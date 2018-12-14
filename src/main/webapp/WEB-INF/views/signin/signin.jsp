@@ -9,7 +9,7 @@
 
 <form id="signin" action="<c:url value="/signin/authenticate" />" method="post">
 	<div class="formInfo">
-  		<h2>Greenhouse Sign In</h2>
+  		<h2>MY HOME Sign In</h2>
   		<c:if test="${not empty param['error']}">
   		<div class="error">
   			Your sign in information was incorrect.
