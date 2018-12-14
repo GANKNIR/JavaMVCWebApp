@@ -10,7 +10,7 @@
 <c:url value="/signup" var="signupUrl" />
 <form:form id="signup" action="${signupUrl}" method="post" modelAttribute="signupForm">
 	<div class="formInfo">
-  		<h2>Sign Up at the Greenhouse</h2>
+  		<h2>Sign Up at the MY HOME</h2>
   		<s:bind path="*">
   		<c:choose>
   		<c:when test="${status.error}">
@@ -18,7 +18,7 @@
   		</c:when>
   		</c:choose>			
   		</s:bind>
-  		<p>Join Greenhouse to connect with other application developers using Spring.</p>  		
+  		<p>Join MY HOME to connect with other application developers using Spring.</p>  		
 	</div>
 	<%@ include file="signupForm.jspf" %>
 	<p><button type="submit">Sign Up</button></p>
