@@ -3,7 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://www.springframework.org/spring-social/facebook/tags" prefix="facebook" %>
 
-<h2>Invite friends to the Greenhouse</h2>
+<h2>Invite friends to MY HOME</h2>
 
 <c:if test="${not empty message}">
 <div class="${message.type.cssClass}">${message.text}</div>
