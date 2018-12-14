@@ -6,7 +6,7 @@
 <c:url value="/invite" var="inviteUrl" />
 <!-- TODO use Web Flow here so invitee and sentBy state can be preserved through the accept flow -->
 <c:if test="${invitee != null}">
-<h2>Welcome to the Greenhouse, ${invitee.firstName}!</h2>
+<h2>Welcome to the MY HOME, ${invitee.firstName}!</h2>
 </c:if>
 
 <c:url value="/invite/accept" var="acceptUrl" />
@@ -22,7 +22,7 @@
   		</s:bind>
 		<p>
 			<c:if test="${sentBy != null}">
-			You've been invited to the Greenhouse by <a href="<c:url value="/members/${sentBy.id}" />">${sentBy.label}</a>.
+			You've been invited to the MY HOME by <a href="<c:url value="/members/${sentBy.id}" />">${sentBy.label}</a>.
 			</c:if>
 			Accept your invitation by completing the signup form below.
 		</p>
