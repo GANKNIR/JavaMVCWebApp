@@ -1,7 +1,7 @@
 <%@ page session="false" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<h1><a title="MY HOME" href="<c:url value="/MY HOME" />"><img src="<c:url value="/resources/logo-header.png" />" alt="MY HOME" /></a></h1>
+<h1><a title="MY HOME" href="/MY HOME"/><img src="<c:url value="/resources/logo-header.png" />" alt="MY HOME" /></a></h1>
 <div id="nav">
 	<ul>
 		<li><a href="<c:url value="/signin" />">Sign In</a></li>
