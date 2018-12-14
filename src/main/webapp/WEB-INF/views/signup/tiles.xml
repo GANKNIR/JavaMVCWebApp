@@ -4,7 +4,7 @@
 <tiles-definitions>
 
 	<definition name="signup" extends="page">
-		<put-attribute name="title" value="Sign up | Greenhouse" />
+		<put-attribute name="title" value="Sign up | MY HOME" />
 		<put-attribute name="content" value="/WEB-INF/views/signup/signup.jsp" />
 	</definition>
 
