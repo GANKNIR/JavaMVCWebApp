@@ -17,8 +17,8 @@ pipeline {
     }
    stage('deploy') {
       steps {
-     sh 'mv ${WORKSPACE}/target/greenhouse*.war ${WORKSPACE}/target/greenhouse.war' 
-      sh 'cp ${WORKSPACE}/target/greenhouse.war /opt/tomcat/webapps/'
+     sh 'mv ${WORKSPACE}/target/greenhouse*.war ${WORKSPACE}/target/myhome.war' 
+      sh 'cp ${WORKSPACE}/target/myhome.war /opt/tomcat/webapps/'
         }
   }
  }
